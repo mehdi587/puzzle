@@ -1,0 +1,201 @@
+body {
+    font-family: 'Piratical', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background-image: url('https://jeux-izi-morocco.com/wp-content/uploads/2024/07/image-de-fonds.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    height: 100%;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#border {
+    position: relative;
+    width: 332px;
+    height: 442px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    left: 2px;
+}
+
+.border-svg {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+#scatter-container {
+    width: 330px;
+    height: 200px;
+    position: relative;
+    margin-top: 100px; /* Adjust based on the border height */
+}
+
+.scatter-area {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 100px;
+}
+
+.timer {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    bottom: 550px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Adjust the space between buttons here */
+    position: relative;
+    margin-top: 20px;
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+    margin: 0 10px; /* Add space around each button */
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
+}
+
+.exit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 3;
+    background-color: black;
+    border-radius: 10px;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+}
+
+.exit-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#fullscreen-prompt {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#fullscreen-prompt p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#fullscreen-prompt button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: transparent; /* Make the modal content background transparent */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    color: white; /* Ensure text is visible */
+}
+
+#modal-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: 50px;
+        height: 45px;
+    }
+    .button img {
+        width: 100%;
+        height: 35px;
+    }
+}
